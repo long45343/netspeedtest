@@ -11,15 +11,9 @@
 
 <div class="cbi-map">
 <% if running == "1" then %>
-        <iframe id="homebox" style="width: 100%; min-height: 400px; height: 650px;border: none; border-radius: 3px;"></iframe>
-
-<script type="text/javascript">
-        document.getElementById("homebox").src = window.location.protocol + "//" + window.location.hostname + ":3300";
-        document.getElementById("homebox").height = document.documentElement.clientHeight;
-        window.onresize = function(){
-            document.getElementById("homebox").height = document.documentElement.clientHeight;
-        }
-</script>
+<button onclick="window.open('http://router.piyansvm.top:3300', '_blank')">
+        前往测速页面
+    </button>    
 <% else %>
 	<style>.running{text-align: center;} .running>h1{font-size: 25px; color: #333; margin: 1rem;} .running>p{ font-size: 1.2rem; color: #8391a2; margin: 1rem;}</style>
 	<div class="running">
